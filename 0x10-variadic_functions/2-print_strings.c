@@ -22,4 +22,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (!separator)
 			printf("%s", str);
 		else if (separator && i == 0)
+			printf("%s", str);
+		else
+			printf("%s%s", separator, str);
+	}
 
+	printf("\n");
+
+	va_end(list);
+}
